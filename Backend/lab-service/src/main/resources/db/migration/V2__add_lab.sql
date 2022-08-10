@@ -1,0 +1,2 @@
+--INSERT INTO lab(id, name, rating, slots_available)
+--VALUES(3, 'Los Altos Central Lab', 4 , 4);

@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://https://postdb.gq:5432/zemosodiagnostics
+    username: postgres
+    password: tes123

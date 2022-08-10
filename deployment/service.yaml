@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bc41-json
+  labels:
+    app: bc41-js
+spec:
+  type: ClusterIP
+  ports:
+    - port: 3001
+      protocol: TCP
+  selector:
+    app: bc41-js
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bc41-frontend
+  labels:
+    app: bc41-fr
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      protocol: TCP
+  selector:
+    app: bc41-fr

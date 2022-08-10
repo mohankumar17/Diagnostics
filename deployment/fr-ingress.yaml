@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bc41-ingress
+  labels:
+    name:  bc41-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+   ingressClassName: nginx
+   rules:
+   - host: greencommute.ga
+     http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: bc41-frontend
+            port:
+              number: 80

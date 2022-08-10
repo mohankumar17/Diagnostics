@@ -1,0 +1,7 @@
+**/assets
+**/types
+**/*.stories.js
+**/*.stories.tsx 
+node_modules/
+dist/
+*.css

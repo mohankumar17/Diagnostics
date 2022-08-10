@@ -1,0 +1,3 @@
+---INSERT INTO public.appointment(id, month, day, date, address_id, user_id, lab_id, test_id)
+---VALUES
+---(2, 'May', 'Friday', 9, 1, 1, 1, 1);

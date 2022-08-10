@@ -1,0 +1,223 @@
+{
+  "users": [
+    {
+      "email": "mohankumar.kothala@zemosolabs.com",
+      "name": "MohanKumar Kothala",
+      "password": "test1234",
+      "id": 1
+    },
+    {
+      "email": "tiltoperator2020@gmail.com",
+      "name": "Tilt Ops",
+      "password": "test1234",
+      "id": 2
+    },
+    {
+      "email": "shivva.revant@zemosolabs.com",
+      "name": "Shivva Revant",
+      "password": "test1234",
+      "id": 3
+    },
+    {
+      "email": "shivvarevanth@gmail.com",
+      "name": "Revanth Shivva",
+      "password": "test1234",
+      "id": 4
+    },
+    {
+      "email": "viswanathan.kasi@zemosolabs.com",
+      "name": "Viswanathan Kasi",
+      "id": 5
+    }
+  ],
+  "patients": [
+    {
+      "relation": "myself",
+      "name": "Mohan",
+      "dob": "1999-07-17",
+      "gender": "male",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "relation": "mother",
+      "name": "Tina",
+      "dob": "1980-08-06",
+      "gender": "male",
+      "user_id": 1,
+      "id": 2
+    },
+    {
+      "relation": "son",
+      "name": "John",
+      "dob": "2011-06-27",
+      "gender": "male",
+      "user_id": 2,
+      "id": 3
+    },
+    {
+      "relation": "father",
+      "name": "Fedrick",
+      "dob": "1972-11-16",
+      "gender": "male",
+      "user_id": 1,
+      "id": 4
+    },
+    {
+      "relation": "myself",
+      "name": "Shivva Revanth",
+      "dob": "2000-07-10",
+      "gender": "male",
+      "user_id": 4,
+      "id": 5
+    },
+    {
+      "relation": "daughter",
+      "name": "Anya Forger",
+      "dob": "2016-09-09",
+      "gender": "female",
+      "user_id": 5,
+      "id": 6
+    },
+    {
+      "relation": "others",
+      "name": "Shivva Ashwanth",
+      "dob": "2003-10-31",
+      "gender": "male",
+      "user_id": 3,
+      "id": 7
+    }
+  ],
+  "address": [
+    {
+      "house": "1-2-3",
+      "road": "Dollars Street",
+      "zipcode": "511234",
+      "cityState": "Newbury, Berkshire",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "house": "4-5-6",
+      "road": "Euros Street",
+      "zipcode": "566789",
+      "cityState": "LA, California",
+      "user_id": 2,
+      "id": 2
+    },
+    {
+      "house": "3-2-3",
+      "road": "Bigbazar",
+      "zipcode": "502110",
+      "cityState": "Medak, Telangana",
+      "user_id": 3,
+      "id": 4
+    },
+    {
+      "house": "401",
+      "road": "NGO's ",
+      "zipcode": "502100",
+      "cityState": "Kamareddy, Telangana",
+      "user_id": 3,
+      "id": 5
+    },
+    {
+      "house": "9",
+      "road": "Sakthi salai, Ramapuram",
+      "zipcode": "600089",
+      "cityState": "Chennai, Tamil Nadu",
+      "user_id": 5,
+      "id": 6
+    },
+    {
+      "house": "7-8-9",
+      "road": "Saint Church Lane",
+      "zipcode": "117",
+      "cityState": "New York, USA",
+      "user_id": 3,
+      "id": 7
+    },
+    {
+      "house": "7-8-9",
+      "road": "Saint Church Lane",
+      "zipcode": "117",
+      "cityState": "New York, USA",
+      "user_id": 3,
+      "id": 8
+    }
+  ],
+  "cards": [
+    {
+      "cardNo": "4654 3564 5764 5355",
+      "expiryDate": "2026-09-16",
+      "cvv": "435",
+      "holderName": "Paul Brandon",
+      "user_id": 1,
+      "id": 1
+    },
+    {
+      "cardNo": "1244 1234 1467 1289",
+      "expiryDate": "2026-09-14",
+      "cvv": "114",
+      "holderName": "John King",
+      "user_id": 2,
+      "id": 2
+    },
+    {
+      "cardNo": "4354 3264 3643 6436",
+      "expiryDate": "2025-06-04",
+      "cvv": "579",
+      "holderName": "Paul Brandon",
+      "user_id": 1,
+      "id": 3
+    },
+    {
+      "cardNo": "1234 1234 1234 1234",
+      "expiryDate": "2025-07-12",
+      "cvv": "123",
+      "holderName": "Viswa",
+      "user_id": 5,
+      "id": 4
+    },
+    {
+      "cardNo": "1244 1255 1266 1277",
+      "expiryDate": "2022-07-02",
+      "cvv": "112",
+      "holderName": "Yessie",
+      "user_id": 3,
+      "id": 5
+    }
+  ],
+  "appointments": [
+    {
+      "month": "March",
+      "date": 3,
+      "day": "Saturday",
+      "test_id": 1,
+      "lab_id": 1,
+      "address_id": 6,
+      "user_id": 5,
+      "id": 1
+    },
+    {
+      "month": "March",
+      "date": 4,
+      "day": "Sunday",
+      "test_id": 1,
+      "lab_id": 1,
+      "address_id": 7,
+      "user_id": 3,
+      "id": 2
+    },
+    {
+      "month": "January",
+      "date": 1,
+      "day": "Monday",
+      "test_id": 1,
+      "lab_id": 1,
+      "address_id": 0,
+      "user_id": null,
+      "id": 3
+    }
+  ]
+}

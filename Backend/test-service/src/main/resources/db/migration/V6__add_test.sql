@@ -1,0 +1,2 @@
+--INSERT INTO test(id, name, time, cost)
+--VALUES(2, 'Thyroid', '24 Hours', 500);

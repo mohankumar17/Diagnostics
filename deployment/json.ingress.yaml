@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bc41-ingress-json
+  labels:
+    name:  bc41-ingress-json
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+   ingressClassName: nginx
+   rules:
+   - host: myteamates.gq
+     http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: bc41-json
+            port:
+              number: 3001

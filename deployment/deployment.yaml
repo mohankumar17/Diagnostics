@@ -1,0 +1,55 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc41-json
+  labels:
+    app: bc41-js
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: bc41-js
+    
+  template:
+    metadata:
+      name: bc41-js
+      labels:
+        app: bc41-js
+    spec:
+      containers:
+        - name: bc41-json
+          image: ghcr.io/sreenidhize/bc41jsonserver:latest
+          ports:
+            - containerPort: 3001
+      imagePullSecrets: 
+        - name: mysecret
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc41-frontend
+  labels:
+    app: bc41-fr
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: bc41-fr
+  template:
+    metadata:
+      name: bc41-fr
+      labels:
+        app: bc41-fr
+    spec:
+      containers:
+        - name: bc41-frontend
+          image: ghcr.io/sreenidhize/bc41frontend:latest
+          ports:
+            - containerPort: 80
+          # env:
+          #  - name: BASEURL
+          #    value: http://bc41-json:3001
+      imagePullSecrets: 
+        - name: mysecret

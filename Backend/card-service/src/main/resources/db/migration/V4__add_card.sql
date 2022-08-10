@@ -1,0 +1,3 @@
+--INSERT INTO public.card(id, card_number, expiry_date, cvv, card_holder, user_id)
+--VALUES
+--(3, '6666 6666 6666 7777', '2033-10-02', '145', 'Paul', 1);
